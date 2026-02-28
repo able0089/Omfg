@@ -25,12 +25,12 @@ const {
 } = require('ocr-space-api-wrapper');
 
 const config = {
-    ocrSpaceApiKey: process.env.OCR_SPACE_API_KEY || require('./config.json').ocrSpaceApiKey,
-    spamChannelID: process.env.SPAM_CHANNEL_ID || require('./config.json').spamChannelID,
-    logChannelID: process.env.LOG_CHANNEL_ID || require('./config.json').logChannelID,
-    errorChannelID: process.env.ERROR_CHANNEL_ID || require('./config.json').errorChannelID,
-    OwnerID: process.env.OWNER_ID || require('./config.json').OwnerID,
-    TOKEN: process.env.TOKEN || require('./config.json').TOKEN
+    ocrSpaceApiKey: process.env.OCR_SPACE_API_KEY,
+    spamChannelID: process.env.SPAM_CHANNEL_ID,
+    logChannelID: process.env.LOG_CHANNEL_ID,
+    errorChannelID: process.env.ERROR_CHANNEL_ID,
+    OwnerID: process.env.OWNER_ID,
+    TOKEN: process.env.TOKEN
 };
 const json = require('./namefix.json');
 const allowedChannels = []; // Add your allowed channel IDs to this array or leave it like [] if you want to it to catch from all channels
